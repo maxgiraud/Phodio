@@ -22,6 +22,7 @@ void Process::Convert() {
 
 	unsigned char r,g,b;
 	double value;
+
 /*
 		double min, max, factorA, factorB;
 	for (unsigned int x(0); x < _image->width(); x++) {
@@ -80,7 +81,7 @@ void Process::WriteAudio() {
     header[42] = value%0x10000/0x100;
     header[43] = value%0x100/0x1;
 
-    file.write((const char)header,44);
+    file.write((const char*)header,44);
 
 	char* out = new char[value];
 
