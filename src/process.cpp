@@ -23,7 +23,7 @@ void Process::Convert() {
 	unsigned char r,g,b;
 	double value;
 
-/*
+
 		double min, max, factorA, factorB;
 	for (unsigned int x(0); x < _image->width(); x++) {
 		for (unsigned int y(0); y < _image->height(); y++) {
@@ -34,7 +34,7 @@ void Process::Convert() {
 	}
 	factorA = 1./(double)(max-min);
 	factorB = 1.-max*factorA;
-*/
+
 	for (unsigned int x(0); x < _image->width(); x++) {
 
 	cout << "Processing " << _filename << " ..." << round((double)x/_image->width()*100) << "%     \r";

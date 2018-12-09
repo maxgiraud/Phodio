@@ -24,7 +24,7 @@ release: clean $(EXEC)
 	./$(EXEC) 2> /dev/null
 
 clean:
-	rm -rfv src/*.o
+	rm -rfv src/*.o test_sample/*.wav
 
 rebuild: clean all
 
